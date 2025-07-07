@@ -1,0 +1,3 @@
+# OracleDB-Ex-04 at İ2İ Systems Software Internship 
+
+I wrote a Java application that automates the insertion of 100 sample records into an Oracle BOOK table using JDBC, generating randomized book titles (e.g., "Dark World") and ISBN-like numbers (XXX-X-XXXXX-XXX-X format) while logging each insertion to the console. The code establishes a secure connection to Oracle XE via jdbc:oracle:thin, uses PreparedStatement to prevent SQL injection, and assigns SYSDATE as the default CREATE_DATE. To run, configure the DB_URL, username, and password, then execute with Maven (mvn clean compile exec:java), verifying results in DBeaver with SELECT * FROM BOOK—ideal for populating test data or demonstrating database operations.
